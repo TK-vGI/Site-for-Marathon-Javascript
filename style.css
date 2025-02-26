@@ -1,0 +1,106 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Helvetica Neue, Arial, sans-serif;
+}
+/* iframe block styles */
+div.iframe-container {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+div.iframe-container iframe#youtube {
+    width: 100vw;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+div.iframe-container iframe#weather {
+    width: 100vw;
+    height: 40vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+/* Video overlay block styles */
+div.video-overlay {
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgb(255, 255, 255);
+}
+div.video-overlay h1 {
+    top: 150px;
+    color: rgb(255, 255, 255);
+    font-size: 73px;
+    /*position: absolute;*/
+    /*text-align: center;*/
+}
+div.video-overlay button {
+    padding: 5px 10px;
+    border: 4px solid white;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    font-size: 24px;
+}
+/* Distance-container and distance block styles */
+div.distance-container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.distance-container h2 {
+    font-size: 32px;
+}
+div.distance-container ul li {
+    display: table;
+    clear: both;
+}
+/* Float the image left for odd items */
+div.distance-container ul li:nth-child(odd) img {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-left: 10px; /* Add space between the image and text */
+}
+/* Float the image right for even items */
+div.distance-container ul li:nth-child(even) img {
+    float: right;
+    width: 150px;
+    height: 150px;
+    margin-right: 10px; /* Add space between the image and text */
+}
+/* Animation for images */
+.distance img{
+    filter: saturate(1);
+}
+.distance img:hover {
+    filter: saturate(2);
+}
+/* Map block styles */
+div.map-container {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+div.map-container h2 {
+    font-size: 32px;
+}
+div.map-container iframe#map {
+    width: 100vw;
+    height: 450px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border: none;
+}
